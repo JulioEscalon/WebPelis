@@ -1,0 +1,92 @@
+@media screen and (max-width:1000px){
+    .red{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:1200px){
+    .enviar-icon{
+        font-size: 30px;
+    }
+    .enviar-mensaje{
+        width: 60%;
+    }
+}
+@media screen and (max-width:800px){
+    .red-fb,.red-insta{
+        display: none;
+    }
+    .vidx{
+        margin-bottom: 20px;
+    }
+    .chat{
+        width: 100%;
+        margin:20px;
+    }
+    .enviar-mensaje{
+        width:80%;
+    }
+    .viendo{
+        left:40%;
+    }
+    .titulo h1{
+        font-size: 2rem;
+    }
+    .icon{
+        display: initial;
+        box-sizing: border-box;
+        font-size: 30px;
+        padding: 0;
+        margin-right: 10%;
+        text-align: right;
+        width: 100%;     
+    }
+    .icon:active{
+        color:black;
+    }
+    header img{
+        height: 100px;
+        margin-top:60px;
+        margin-right: 30px;
+    }
+    .titulo h2{
+        display: none;
+    }
+    .vidx{
+        width: 96%;
+    }
+}
+@media screen and (max-width:575px){
+    .logo h1{
+        font-size: 20px;
+    }
+    header img{
+        height: 90px;
+        margin-top:50px;
+        margin-right: 20px;
+
+    }
+    .viendo{
+        top:45px;
+    }
+
+}
+@media screen and (max-width:415px){
+    .logo div{
+        display: none;
+    }
+    .viendo{
+        left: 35%;
+    }
+    header img{
+        height: 40px;
+        margin:10px;
+        margin-right: 30px;
+    }
+}
+@media screen and (max-width:340px){
+    .viendo{
+        left:30%;
+        display:table;
+
+    }
+}

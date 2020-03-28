@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+        <title>Al Fondo hay Cine - En Vivo</title>
+        <link rel="shortcut icon" href="logo.png">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mediaqueris.css">
+        <script src="funciones.js" ></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="logo.png" alt="#AFHC">
+                <div><h1>Al Fondo Hay Cine</h1></div>
+            </div>  
+            <div class="redes-sociales">
+                <div class="red red-fb"><a href="https://www.facebook.com/ccat.uni.fiis/"><i class="fab fa-facebook-square"></i></a></div>
+                <div class="red red-insta"><a href="https://www.instagram.com/ccat.uni/"><i class="fab fa-instagram"></i></a></div>
+                <div class="icon">
+                    <i class="menu fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <div class="contenedor">
+            <div class="titulo">
+                <h2>Estamos viendo: </h2><h1>Título de la película</h2>
+            </div>
+                <!-- Marco, si lees esto aunque sé que lo harás :'v el número que puede llenar como máximo es el que he puesto abajo -->
+                <!-- te sugiero que si llegas a 10 000 uses el 10K. PD: borra todos los comentarios plox-->
+                <div class="viendo"><i class="users-icon fas fa-users"></i> 9999</div>
+            <div class="contenedor2">
+                <div class="vidx">
+                    <video id="mse" autoplay controls ></video>
+                </div>        
+                <div class="chat" id="spam">
+                    <div class="mensajes" id="msg-box">
+                        <div class="union" id="union">   
+                        <div class="usuario2" title="Julio Escalón"> JE </div><div class="globo">Gaaaa</div>
+                        </div>
+                        <div class="union"  id="union">
+                        <div class="usuario2" title="Julio Escalón"> JE</div> <div class="globo">Puedo escribir una canción sin memorizar la letra ella es la única que da sentido a mi vida :''v</div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <!--Papu, aquí pones las iniciales de su correo de gmail :v de ejemplo pongo las mías xd -->
+                        <!--Estoy poniendo Nombre y Apellidos, porfa cambia por su nombre real :'v-->
+                        <div id="usuario" title="Julio Escalón"> JE</div> 
+                        <input type="text" class="enviar-mensaje" id="msg-text">
+                        <button class="transparente" onclick="enviar()"><i class="enviar-icon fab fa-telegram-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            <section class="contenedor extra">
+                <div class="informacion">
+                    <h2>Sinopsis</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit quisquam dolore est ratione, 
+                        natus voluptate incidunt exercitationem quam enim voluptas dicta aliquam, possimus molestiae 
+                        tempora deleniti earum nisi officiis ipsum.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga in modi commodi
+                        facilis! Delectus maiores fuga dolor accusantium assumenda esse dicta perferendis debitis. 
+                        Quis, adipisci ex nam omnis officiis consectetur!</p>
+                </div>
+                <div class="reparto">
+                    <h3 class="director">Director(es)</h3>
+                    <h3 class="principales"></h3>
+                </div>    
+            </section>
+        </div>
+        <footer>
+            <div class="contenedor footer">
+                Diseño hecho por: Julio Cesar Escalón Santacruz
+                <h4><i class="wsp fab fa-whatsapp"></i> 948273293</h4>
+            </div>
+        </footer>
+    </body>
+</html>
