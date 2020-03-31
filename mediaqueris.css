@@ -7,9 +7,6 @@
     .enviar-icon{
         font-size: 30px;
     }
-    .enviar-mensaje{
-        width: 60%;
-    }
 }
 @media screen and (max-width:800px){
     .red-fb,.red-insta{
@@ -18,12 +15,9 @@
     .vidx{
         margin-bottom: 20px;
     }
-    .chat{
+    .chatbox{
         width: 100%;
         margin:20px;
-    }
-    .enviar-mensaje{
-        width:80%;
     }
     .viendo{
         left:40%;

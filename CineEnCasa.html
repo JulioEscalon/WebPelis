@@ -35,26 +35,29 @@
                 <div class="vidx">
                     <video id="mse" autoplay controls ></video>
                 </div>        
-                <div class="chat" id="spam">
-                    <div class="mensajes" id="msg-box">
-                        <div class="union" id="union">   
-                        <div class="usuario2" title="Julio Escalón"> JE </div><div class="globo">Gaaaa</div>
+                <div class="chatbox" id="spam">
+                    <div class="chatlogs" id="msg-box">
+                        <div class="chat friend" id="union">   
+                            <div class="user"> MV </div>
+                            <div class="chat-message">Gaaaa</div>
                         </div>
-                        <div class="union"  id="union">
-                        <div class="usuario2" title="Julio Escalón"> JE</div> <div class="globo">Puedo escribir una canción sin memorizar la letra ella es la única que da sentido a mi vida :''v</div>
+                        <div class="chat self"  id="union">
+                            <div class="user"> JE</div> 
+                            <div class="chat-message">Puedo escribir una canción sin memorizar la letra ella es la única que da sentido a mi vida :''v</div>
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="chat-form">
                         <!--Papu, aquí pones las iniciales de su correo de gmail :v de ejemplo pongo las mías xd -->
                         <!--Estoy poniendo Nombre y Apellidos, porfa cambia por su nombre real :'v-->
-                        <div id="usuario" title="Julio Escalón"> JE</div> 
-                        <input type="text" class="enviar-mensaje" id="msg-text">
+                        <!div id="usuario" title="Julio Escalón"><!/div> 
+                        <textarea class="texto" id="msg-text"></textarea>
                         <button class="transparente" onclick="enviar()"><i class="enviar-icon fab fa-telegram-plane"></i></button>
                     </div>
                 </div>
             </div>
             <section class="contenedor extra">
-                <div class="informacion">
+                <div class="informacion">Información</div>
+                <div class="info-cont">    
                     <h2>Sinopsis</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit quisquam dolore est ratione, 
                         natus voluptate incidunt exercitationem quam enim voluptas dicta aliquam, possimus molestiae 
@@ -63,7 +66,8 @@
                         facilis! Delectus maiores fuga dolor accusantium assumenda esse dicta perferendis debitis. 
                         Quis, adipisci ex nam omnis officiis consectetur!</p>
                 </div>
-                <div class="reparto">
+                <div class="reparto">Reparto</div>
+                <div class="reparto-info">
                     <h3 class="director">Director(es)</h3>
                     <h3 class="principales"></h3>
                 </div>    

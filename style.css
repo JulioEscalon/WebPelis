@@ -85,9 +85,9 @@ header img{
 }
 .titulo h1, .titulo h2{
     display: block;
-    margin:6px 10px;
+    margin:0 10px;
+    margin-top: 40px;
 }
-
 .vidx{
     width:72%;
     margin:0;
@@ -100,22 +100,30 @@ video#mse{
     padding: 0;
     width:100%;
 }
-.chat{
+.chatbox{
     display: flex;
-    width: 24%;
+    width: 26%;
     flex-direction: column;
     padding: 0;
     margin: 0;
     min-height: 455.283px;
+    max-height: 455.283px;
 }
-.globo{
+.chat-message{
     display: table;
     margin: 0px;
     padding: 5px 8px;
     border-radius: 4px;
-    background-color:rgba(7,6,6,0.4);
 }
-.chat .mensajes{
+.friend .chat-message{
+    background-color:#222;
+}
+.self .chat-message{
+    background-color: #333;
+    order:-1;
+}
+
+.chatbox .chatlogs{
     min-height: 400px;
     height: 95%;
     background-color:#263238;
@@ -123,13 +131,25 @@ video#mse{
     border-radius: 5px;
     display: inline-block;
     margin:5px 0;
-    padding:5px;
+    padding:10px;
+    overflow-x: hidden;
+    overflow-y:scroll;
 }
-.box{
+.chatbox .chatlogs::-webkit-scrollbar{
+    width:6px;
+}
+.chatbox .chatlogs::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.3);
+}
+.chat-form{
     display: flex;
     flex-direction: row;
 }
-div#usuario,.usuario2{
+.chat .user img{
+    width: 100%;
+}
+.user{
     width: 35px;
     height: 35px;
     display: flex;
@@ -143,7 +163,7 @@ div#usuario,.usuario2{
     align-items :center;
     overflow: hidden;
 }
-div#usuario:hover,.usuario2:hover{
+div#usuario:hover,.user:hover{
     cursor:default;
 }
 .iniciales{
@@ -151,20 +171,29 @@ div#usuario:hover,.usuario2:hover{
     padding: 0;
     text-align: center;
 }
-.enviar-mensaje{
+.texto{
+    padding-top: 5px;
     border-radius: 10px;
-    height: 30px;
+    height: 40px;
     width: 70%;
     margin-right: 10px;
     color: #191B19;
     padding-left: 5px;
     padding-right: 5px;
+    resize: none;
+    width: 100%;
 }
-.enviar-mensaje:hover{
+.texto::-webkit-scrollbar{
+    width:6px;
+}
+.texto::-webkit-scrollbar-thumb{
     border-radius: 5px;
+    background-color: rgba(0,0,0,0.3);
+}
+.texto:hover{
     border: #1F618D 2px solid;
 }
-.enviar-mensaje:focus{
+.texto:focus{
     border-radius: 3px;
     border: #1F618D 2px solid;
     box-shadow: 4px 4px 5px #1F618D;
@@ -214,16 +243,16 @@ div#usuario:hover,.usuario2:hover{
     font-size: 18px;
     margin-right: 5px;
 }
-.union{
+.chat{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
     margin-left: 2px;
     align-items :center;
     overflow: hidden;    
 }
-.globo:hover{
+.chat-message:hover{
     cursor: default;
 }
 .transparente{
