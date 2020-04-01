@@ -2,6 +2,10 @@
     .red{
         font-size: 25px;
     }
+    .primero .directores .director .img-director, .segundo .actores .actor .img-actor{
+        height: 50px;
+        width: 50px;
+    }
 }
 @media screen and (max-width:1200px){
     .enviar-icon{
@@ -9,8 +13,19 @@
     }
 }
 @media screen and (max-width:800px){
+    .primero,.segundo{
+        justify-content: center;
+        align-items: center;
+    }
+    .primero .directores .director, .segundo .actores .actor {
+        display: flex;
+        flex-direction: row;
+        width:100%;
+        margin:0;
+        padding:0;
+    }
     .red-fb,.red-insta{
-        display: none;
+        display: flex;
     }
     .vidx{
         margin-bottom: 20px;
@@ -62,7 +77,9 @@
     .viendo{
         top:45px;
     }
-
+    .info-head{
+        justify-content: center;
+    }
 }
 @media screen and (max-width:415px){
     .logo div{

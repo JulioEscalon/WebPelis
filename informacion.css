@@ -68,18 +68,18 @@ a{
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    justify-content: center;
 }
 .primero h2,.primero .directores,
 .segundo h2,.segundo .actores{
-    display:block;
+    display:flex;
+    justify-content: space-between;
     width:100%;
 }
 .primero .directores,
 .segundo .actores{
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .primero .directores .director,
@@ -88,7 +88,7 @@ a{
     flex-wrap: wrap;
     margin:10px;
     padding: 10px;
-    margin: 20px 60px;
+    margin: 20px 80px;
 }
 .primero .directores .director .img-director,
 .segundo .actores .actor .img-actor{
@@ -97,7 +97,6 @@ a{
     background-color: teal;
     display: flex;
     border-radius: 10px;
-    flex-shrink: 0;
     overflow: hidden;
     margin:auto;
     margin-bottom: 10px;
@@ -106,16 +105,15 @@ a{
 .segundo .actores .actor .img-actor img{
     width:100%;
 }
-.segundo .actores .actor .info-actor{
+.primero .directores .director .info-director,.segundo .actores .actor .info-actor{
     overflow:hidden;
     display:flex;
     flex-direction:column ;
     justify-content: center;
+    text-align: center;
 }
 .segundo .actores .actor .info-actor p{
     display:block;
-    justify-content: center;
-    text-align: center;
 }
 .segundo .actores .actor .info-actor p u{
     display:block;
