@@ -3,3 +3,124 @@
     padding:0;
     box-sizing: border-box;
 }
+.extra{
+    padding:80px 60px;
+    display: flex;
+}
+.info-head{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px #333 solid;
+    border-bottom: 1px #333 solid;
+}
+#info,#reparto{
+    display:none;
+}
+#uno,#dos{
+    margin: 0px 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+
+}
+a{
+    text-decoration: none;
+}
+.opcion{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+#uno:hover,#dos:hover{
+    cursor: pointer;
+    font-weight: bolder;
+    color: rgb(34, 78, 114);
+    background-color:rgba(255, 255, 255, 0.9);
+}
+#info:target{
+    display: block;
+}
+#reparto:target{
+    display: block;
+}
+.selected{
+    background-color: steelblue;
+    font-weight: bolder;
+    color: #fff;
+}
+.ga{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.ga h2{
+    margin-bottom: 20px;
+}
+.info-contenedor{
+    width: 100%;
+}
+/*-------------------------#divReparto-------------------------------------------*/
+/*----------------------------------------Directores y Actores-------------------------------------------*/
+.primero,.segundo{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.primero h2,.primero .directores,
+.segundo h2,.segundo .actores{
+    display:block;
+    width:100%;
+}
+.primero .directores,
+.segundo .actores{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.primero .directores .director,
+.segundo .actores .actor{
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:10px;
+    padding: 10px;
+    margin: 20px 60px;
+}
+.primero .directores .director .img-director,
+.segundo .actores .actor .img-actor{
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+    display: flex;
+    border-radius: 10px;
+    flex-shrink: 0;
+    overflow: hidden;
+    margin:auto;
+    margin-bottom: 10px;
+}
+.primero .directores .director .img-director img,
+.segundo .actores .actor .img-actor img{
+    width:100%;
+}
+.segundo .actores .actor .info-actor{
+    overflow:hidden;
+    display:flex;
+    flex-direction:column ;
+    justify-content: center;
+}
+.segundo .actores .actor .info-actor p{
+    display:block;
+    justify-content: center;
+    text-align: center;
+}
+.segundo .actores .actor .info-actor p u{
+    display:block;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+}

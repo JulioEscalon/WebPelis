@@ -8,6 +8,7 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="mediaqueris.css">
+        <link rel="stylesheet" href="informacion.css">
         <script src="funciones.js" ></script>
     </head>
     <body>
@@ -47,30 +48,79 @@
                         </div>
                     </div>
                     <div class="chat-form">
-                        <!--Papu, aquí pones las iniciales de su correo de gmail :v de ejemplo pongo las mías xd -->
-                        <!--Estoy poniendo Nombre y Apellidos, porfa cambia por su nombre real :'v-->
-                        <!div id="usuario" title="Julio Escalón"><!/div> 
                         <textarea class="texto" id="msg-text"></textarea>
-                        <button class="transparente" onclick="enviar()"><i class="enviar-icon fab fa-telegram-plane"></i></button>
+                        <button class="transparente" id="enviar"><i class="enviar-icon fab fa-telegram-plane"></i></button>
                     </div>
                 </div>
             </div>
             <section class="contenedor extra">
-                <div class="informacion">Información</div>
-                <div class="info-cont">    
-                    <h2>Sinopsis</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit quisquam dolore est ratione, 
-                        natus voluptate incidunt exercitationem quam enim voluptas dicta aliquam, possimus molestiae 
-                        tempora deleniti earum nisi officiis ipsum.</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga in modi commodi
-                        facilis! Delectus maiores fuga dolor accusantium assumenda esse dicta perferendis debitis. 
-                        Quis, adipisci ex nam omnis officiis consectetur!</p>
+                <div class="info-head">
+                    <a id="primero" href="#info"><div class="opcion" id="uno">Información</div></a>
+                    <a id="segundo" href="#reparto"><div class="opcion" id="dos">Reparto</div></a>
                 </div>
-                <div class="reparto">Reparto</div>
-                <div class="reparto-info">
-                    <h3 class="director">Director(es)</h3>
-                    <h3 class="principales"></h3>
-                </div>    
+                <div class="info-contenedor">
+                    <div class="contenido-info" id="info">
+                        <div class="ga">
+                            <h2>Sinopsis</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit quisquam dolore est ratione, 
+                            natus voluptate incidunt exercitationem quam enim voluptas dicta aliquam, possimus molestiae 
+                                tempora deleniti earum nisi officiis ipsum.</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga in modi commodi
+                                facilis! Delectus maiores fuga dolor accusantium assumenda esse dicta perferendis debitis. 
+                                Quis, adipisci ex nam omnis officiis consectetur!</p>
+                            <h2>Género</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem sed voluptate rem, 
+                                dolore odio, labore ipsam laudantium eaque nisi recusandae velit blanditiis dignissimos 
+                                est a ad quo qui quasi similique.</p>    
+                        </div>    
+                    </div>
+                    <div class="reparto-info" id="reparto">
+                        <div class="ga">
+                            <div class="primero">
+                                <h2>Director(es)</h2>
+                                <div class="directores">
+                                    <div class="director">
+                                        <div class="img-director"></div>
+                                        <div class="info-director">Nombre del Director</div>
+                                    </div>
+                                    <div class="director">
+                                        <div class="img-director"></div>
+                                        <div class="info-director">Nombre del Director</div>
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="segundo">
+                                <h2>Actores</h2>
+                                <div class="actores">
+                                    <div class="actor">
+                                        <div class="img-actor"></div>
+                                        <div class="info-actor"><p>Nombre del Actor</p><p><u>Nombre del personaje</u></p></div>
+                                    </div>
+                                    <div class="actor">
+                                        <div class="img-actor"></div>
+                                        <div class="info-actor"><p>Nombre del Actor</p><p><u>Nombre del personaje</u></p></div>
+                                    </div>
+                                    <div class="actor">
+                                        <div class="img-actor"></div>
+                                        <div class="info-actor"><p>Nombre del Actor</p><p><u>Nombre del personaje</u></p></div>
+                                    </div>
+                                    <div class="actor">
+                                        <div class="img-actor"></div>
+                                        <div class="info-actor"><p>Nombre del Actor</p><p><u>Nombre del personaje</u></p></div>
+                                    </div>
+                                    <div class="actor">
+                                        <div class="img-actor"></div>
+                                        <div class="info-actor"><p>Nombre del Actor</p><p><u>Nombre del personaje</u></p></div>
+                                    </div>
+                                    <div class="actor">
+                                        <div class="img-actor"></div>
+                                        <div class="info-actor"><p>Nombre del Actor</p><p><u>Nombre del personaje</u></p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>   
             </section>
         </div>
         <footer>
