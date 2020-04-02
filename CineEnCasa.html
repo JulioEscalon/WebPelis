@@ -1,7 +1,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
         <title>Al Fondo hay Cine - En Vivo</title>
         <link rel="shortcut icon" href="logo.png">
@@ -9,125 +9,151 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="mediaqueris.css">
         <link rel="stylesheet" href="informacion.css">
-        <script src="funciones.js" ></script>
+        <link rel="stylesheet" href="modal.css">
+        <script src="funciones.js"></script>
     </head>
     <body>
-        <header>
-            <div class="logo">
-                <img src="logo.png" alt="#AFHC">
-                <div><h1>Al Fondo Hay Cine</h1></div>
-            </div>
-            <div class="redes-sociales">
-                <div class="icon">
-                    <i class="menu fas fa-bars"></i>
+        <div id="caja">
+            <header>
+                <div class="logo">
+                    <img src="logo.png" alt="#AFHC">
+                    <div><h1>Al Fondo Hay Cine</h1></div>
                 </div>
-                <div class="red red-fb"><a href="https://www.facebook.com/ccat.uni.fiis/"><i class="fab fa-facebook-square"></i></a></div>
-                <div class="red red-insta"><a href="https://www.instagram.com/ccat.uni/"><i class="fab fa-instagram"></i></a></div>
-            </div>
-        </header>
-        <div class="contenedor">
-            <div class="titulo">
-                <h2>Estamos viendo: </h2><h1>Título de la película</h2>
-            </div>
-                <!-- Marco, si lees esto aunque sé que lo harás :'v el número que puede llenar como máximo es el que he puesto abajo -->
-                <!-- te sugiero que si llegas a 10 000 uses el 10K. PD: borra todos los comentarios plox-->
-                <div class="viendo"><i class="users-icon fas fa-users"></i> 9999</div>
-            <div class="contenedor2">
-                <div class="vidx">
-                    <video id="mse" autoplay controls ></video>
-                </div>        
-                <div class="chatbox" id="spam">
-                    <div class="chatlogs" id="msg-box">
-                        <div class="chat friend" id="union">   
-                            <div class="user"> MV </div>
-                            <div class="chat-message">Gaaaa</div>
-                        </div>
-                        <div class="chat self"  id="union">
-                            <div class="user"> JE</div> 
-                            <div class="chat-message">Puedo escribir una canción sin memorizar la letra ella es la única que da sentido a mi vida :''v</div>
-                        </div>
+                <div class="redes-sociales">
+                    <div class="icon">
+                        <i class="menu fas fa-bars"></i>
                     </div>
-                    <div class="chat-form">
-                        <textarea class="texto" id="msg-text"></textarea>
-                        <button class="transparente" id="enviar"><i class="enviar-icon fab fa-telegram-plane"></i></button>
-                    </div>
+                    <div class="red red-fb"><a href="https://www.facebook.com/ccat.uni.fiis/"><i class="fab fa-facebook-square"></i></a></div>
+                    <div class="red red-insta"><a href="https://www.instagram.com/ccat.uni/"><i class="fab fa-instagram"></i></a></div>
                 </div>
-            </div>
-            <section class="contenedor extra">
-                <div class="info-head">
-                    <a id="primero" href="#info"><div class="opcion" id="uno">Información</div></a>
-                    <a id="segundo" href="#reparto"><div class="opcion" id="dos">Reparto</div></a>
+            </header>
+            <div class="contenedor">
+                <div class="titulo">
+                    <h2>Estamos viendo: </h2><h1>Título de la película</h2>
                 </div>
-                <div class="info-contenedor">
-                    <div class="contenido-info" id="info">
-                        <div class="ga">
-                            <h2>Sinopsis</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit quisquam dolore est ratione, 
-                            natus voluptate incidunt exercitationem quam enim voluptas dicta aliquam, possimus molestiae 
-                                tempora deleniti earum nisi officiis ipsum.</p>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga in modi commodi
-                                facilis! Delectus maiores fuga dolor accusantium assumenda esse dicta perferendis debitis. 
-                                Quis, adipisci ex nam omnis officiis consectetur!</p>
-                            <h2>Género</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem sed voluptate rem, 
-                                dolore odio, labore ipsam laudantium eaque nisi recusandae velit blanditiis dignissimos 
-                                est a ad quo qui quasi similique.</p>    
-                        </div>    
-                    </div>
-                    <div class="reparto-info" id="reparto">
-                        <div class="ga">
-                            <div class="primero">
-                                <h2>Director(es)</h2>
-                                <div class="directores">
-                                    <div class="director">
-                                        <div class="img-director"></div>
-                                        <div class="info-director">Nombre del Director</div>
-                                    </div>
-                                    <div class="director">
-                                        <div class="img-director"></div>
-                                        <div class="info-director">Nombre del Director</div>
-                                    </div>  
-                                </div>
+                    <!-- Marco, si lees esto aunque sé que lo harás :'v el número que puede llenar como máximo es el que he puesto abajo -->
+                    <!-- te sugiero que si llegas a 10 000 uses el 10K. PD: borra todos los comentarios plox-->
+                    <div class="viendo"><i class="users-icon fas fa-users"></i> 9999</div>
+                <div class="contenedor2">
+                    <div class="vidx">
+                        <video id="mse" autoplay controls ></video>
+                    </div>        
+                    <div class="chatbox" id="spam">
+                        <div class="chatlogs" id="msg-box">
+                            <div class="chat friend" id="union">   
+                                <div class="user">MV</div>
+                                <div class="chat-message">Gaaaa</div>
                             </div>
-                            <div class="segundo">
-                                <h2>Actores</h2>
-                                <div class="actores">
-                                    <div class="actor">
-                                        <div class="img-actor"></div>
-                                        <div class="info-actor"><p>Nombre del Actor</p><p><u>Nombre del personaje</u></p></div>
-                                    </div>
-                                    <div class="actor">
-                                        <div class="img-actor"></div>
-                                        <div class="info-actor"><p>Nombre del Actor</p><p><u>Nombre del personaje</u></p></div>
-                                    </div>
-                                    <div class="actor">
-                                        <div class="img-actor"></div>
-                                        <div class="info-actor"><p>Nombre del Actor</p><p><u>Nombre del personaje</u></p></div>
-                                    </div>
-                                    <div class="actor">
-                                        <div class="img-actor"></div>
-                                        <div class="info-actor"><p>Nombre del Actor</p><p><u>Nombre del personaje</u></p></div>
-                                    </div>
-                                    <div class="actor">
-                                        <div class="img-actor"></div>
-                                        <div class="info-actor"><p>Nombre del Actor</p><p><u>Nombre del personaje</u></p></div>
-                                    </div>
-                                    <div class="actor">
-                                        <div class="img-actor"></div>
-                                        <div class="info-actor"><p>Nombre del Actor</p><p><u>Nombre del personaje</u    ></p></div>
+                            <div class="chat self"  id="union">
+                                <div class="user">JE</div> 
+                                <div class="chat-message">Puedo escribir una canción sin memorizar la letra ella es la única que da sentido a mi vida :''v</div>
+                            </div>
+                        </div>
+                        <div class="chat-form">
+                            <textarea class="texto" id="msg-text"></textarea>
+                            <i class="enviar-icon fab fa-telegram-plane"></i>
+                        </div>
+                    </div>
+                </div>
+                <section class="contenedor extra">
+                    <div class="info-head">
+                        <a id="primero" href="#info"><div class="opcion" id="uno">Información</div></a>
+                        <a id="segundo" href="#reparto"><div class="opcion" id="dos">Reparto</div></a>
+                    </div>
+                    <div class="info-contenedor">
+                        <div class="contenido-info" id="info">
+                            <div class="ga">
+                                <h2>Sinopsis</h2>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit quisquam dolore est ratione, 
+                                natus voluptate incidunt exercitationem quam enim voluptas dicta aliquam, possimus molestiae 
+                                    tempora deleniti earum nisi officiis ipsum.</p>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga in modi commodi
+                                    facilis! Delectus maiores fuga dolor accusantium assumenda esse dicta perferendis debitis. 
+                                    Quis, adipisci ex nam omnis officiis consectetur!</p>
+                                <h2>Género</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem sed voluptate rem, 
+                                    dolore odio, labore ipsam laudantium eaque nisi recusandae velit blanditiis dignissimos 
+                                    est a ad quo qui quasi similique.</p>    
+                            </div>    
+                        </div>
+                        <div class="reparto-info" id="reparto">
+                            <div class="ga">
+                                <div class="primero">
+                                    <h2>Director(es)</h2>
+                                    <div class="directores">
+                                        <div class="director">
+                                            <div class="img-director"></div>
+                                            <div class="info-director">Nombre del Director</div>
+                                        </div>
+                                        <div class="director">
+                                            <div class="img-director"></div>
+                                            <div class="info-director">Nombre del Director</div>
+                                        </div>  
                                     </div>
                                 </div>
-                            </div>
-                        </div>    
-                    </div>
-                </div>   
-            </section>
+                                <div class="segundo">
+                                    <h2>Actores</h2>
+                                    <div class="actores">
+                                        <div class="actor">
+                                            <div class="img-actor"></div>
+                                            <div class="info-actor"><p>Nombre del Actor</p><p><u>Nombre del personaje</u></p></div>
+                                        </div>
+                                        <div class="actor">
+                                            <div class="img-actor"></div>
+                                            <div class="info-actor"><p>Nombre del Actor</p><p><u>Nombre del personaje</u></p></div>
+                                        </div>
+                                        <div class="actor">
+                                            <div class="img-actor"></div>
+                                            <div class="info-actor"><p>Nombre del Actor</p><p><u>Nombre del personaje</u></p></div>
+                                        </div>
+                                        <div class="actor">
+                                            <div class="img-actor"></div>
+                                            <div class="info-actor"><p>Nombre del Actor</p><p><u>Nombre del personaje</u></p></div>
+                                        </div>
+                                        <div class="actor">
+                                            <div class="img-actor"></div>
+                                            <div class="info-actor"><p>Nombre del Actor</p><p><u>Nombre del personaje</u></p></div>
+                                        </div>
+                                        <div class="actor">
+                                            <div class="img-actor"></div>
+                                            <div class="info-actor"><p>Nombre del Actor</p><p><u>Nombre del personaje</u    ></p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>   
+                </section>
+            </div>
+            <footer>
+                <div class="contenedor footer">
+                    Diseño hecho por: Julio Cesar Escalón Santacruz
+                    <h4><i class="wsp fab fa-whatsapp"></i> 948273293</h4>
+                </div>
+            </footer>
         </div>
-        <footer>
-            <div class="contenedor footer">
-                Diseño hecho por: Julio Cesar Escalón Santacruz
-                <h4><i class="wsp fab fa-whatsapp"></i> 948273293</h4>
-            </div>
-        </footer>
+        <!--Agregando para que funcione el nombre :'v-->
+		<div id="solohazlo">
+			<div class="modal" id="modal">
+				<div class="modal-head">Bienvenido a Al Fondo Hay Cine</div>
+				<div class="modal-message">
+					<img src="logo.png" alt="Popcorncito">
+					<div class="suggest burbuja">
+						<p id="inicio">
+							Hola!, soy Poppy Corn, pero todos me llaman Canchita.
+							Para que podamos interactuar entre todos, coloca tu nombre y apellido aquí abajo.<br>
+							Disfrutaremos de muchas películas juntos!!!!
+						</p>
+						<u id="insiste">No estás rellenando los campos. Por favor, rellena los campos para poder conocernos.</u>
+						<u id="nonumero">Vamos, quiero conocerte no creo que tu nombre lleve números.</u> 
+					</div>
+				</div>
+				<div class="modal-form">
+					<input type="text" id="firstName" placeholder="Coloca tu nombre (Ej: Poppy)">
+					<input type="text" id="lastName" placeholder="Coloca tu apellido (Ej:Corn)">
+					<input type="submit" id="nombre-apellido" value="Ver Película">
+				</div>
+			</div>
+		</div>
     </body>
 </html>

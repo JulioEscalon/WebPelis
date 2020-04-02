@@ -120,9 +120,7 @@ video#mse{
 }
 .self .chat-message{
     background-color: #333;
-    order:-1;
 }
-
 .chatbox .chatlogs{
     min-height: 400px;
     height: 95%;
@@ -199,6 +197,9 @@ div#usuario:hover,.user:hover{
     box-shadow: 4px 4px 5px #1F618D;
 }
 .enviar-icon{
+    text-align:center;
+    margin-top:5px;
+    margin-right: 10px;
     font-size: 30px;
     color: gray;
 }

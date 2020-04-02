@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#caja{
+    position: absolute;
+}
+#solohazlo{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,.6);
+    padding:20px;
+    position: fixed;
+    z-index:1000;
+}
+.modal{
+    position: relative;
+    background-color:#393837;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+.modal .modal-head{
+    text-align: center;
+    background-color: steelblue;
+    padding: 10px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    font-size: 25px;
+    color:#fff;
+}
+.modal .modal-message{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+.modal .modal-message img{
+    width: 180px;
+    height: 180px;
+    margin-top: 50px;
+}
+.modal .modal-message .suggest{
+    margin-top: -40px;
+    margin-right: 30px;
+    text-align: justify;
+    color:#000;
+    font-size: 18px;
+}
+.modal .modal-message .suggest p,
+.modal .modal-message .suggest u{
+    color:#000;
+}
+#insiste,#nonumero{
+    display: none;
+    text-decoration: none;
+}
+.modal .modal-message .burbuja{
+    position: relative;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+}
+.modal .modal-message .burbuja:after{
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    margin-left: -45px;    
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px ;
+    border-color: transparent #fff transparent transparent;
+}
+.modal .modal-form{
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    margin-top: 20px;
+}
+.modal .modal-form input{
+    margin: auto;
+    color:black;
+    border-radius: 10px;
+}
+.modal .modal-form input[type="text"]{
+    display: block;
+    width: 80%;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 8px;
+}
+.modal .modal-form input[type="submit"]{
+    width: 40%;
+    text-align: center;
+    font-weight: bolder;
+    background-color: steelblue;
+    border: none;
+    box-shadow: 2px 2px 4px midnightblue;
+    padding: 10px 20px;
+    margin-top: 30px;
+    border-radius: 3px;
+}
+input[type="text"]:focus{
+    border-radius: 4px;
+}
+#nombre-apellido:hover{
+    cursor: pointer;
+}
+#nombre-apellido:active{
+    background-color: cadetblue;
+}
