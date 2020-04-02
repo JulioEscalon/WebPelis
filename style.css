@@ -118,7 +118,7 @@ video#mse{
 .friend .chat-message{
     background-color:#222;
 }
-.self .chat-message{
+.friend .chat-message:hover{
     background-color: #333;
 }
 .chatbox .chatlogs{
@@ -245,9 +245,9 @@ div#usuario:hover,.user:hover{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
     margin-left: 2px;
-    align-items :center;
+    align-items :flex-start;
     overflow: hidden;    
 }
 .chat-message:hover{

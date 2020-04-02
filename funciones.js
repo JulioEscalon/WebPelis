@@ -2,6 +2,7 @@ window.onload  = function(){
     document.getElementById("primero").onclick = seleccionarPrimero;
     document.getElementById("segundo").onclick = seleccionarSegundo;
     document.getElementById("nombre-apellido").onclick = nickname;
+    document.getElementById("sendMessage").onclick = enviar;
 }
 function seleccionarPrimero(){
     var primero =  document.getElementById("uno");
@@ -15,10 +16,6 @@ function seleccionarSegundo(){
     primero.className="opcion";   
     segundo.className="selected";
 }
-function titulo(name,lastname){
-    var title = name+" "+lastname;
-    return title;
-}
 function eliminarDiv(divNone){
     return document.getElementById(divNone).style.display="none";
 
@@ -29,10 +26,12 @@ function eliminarDiv(divNone){
 function nickname(){
     var nombre = document.getElementById("firstName").value;
     var apellido = document.getElementById("lastName").value;
-    userTittle = titulo(nombre,apellido);
-    var v1 = nombre.toUpperCase(), v2=apellido.toUpperCase();
-    var letterNombre= v1[0];var letterApellido= v2[0];
-    iniciales=letterNombre+letterApellido;
+    var v1 = nombre.toUpperCase();
+    var v2=apellido.toUpperCase();
+    fN=nombre.replace(nombre[0],v1[0]);
+    lN=apellido.replace(apellido[0],v2[0]);
+    iniciales=v1[0]+v2[0];
+    userTittle = fN+" "+lN;
     if(!isNaN(parseInt(nombre)) || !isNaN(parseInt(apellido))){
         if(nombre!=="" && apellido!==""){
             eliminarDiv("inicio");
@@ -55,4 +54,9 @@ function nickname(){
             activarDiv("insiste");
         }  
     }
+}
+function enviar(){
+    texto = document.getElementById("msg-text").value;
+    console.log(userTittle+" (alias "+iniciales+") ha escrito: "+texto);
+    document.getElementById("msg-text").value="";
 }
